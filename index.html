@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Q.InvestKepri</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #010F91;
+            color: #fff;
+            font-family: 'Segoe UI', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .hero {
+            padding: 70px 0 40px;
+            animation: fadeInUp 1.5s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hero h1 {
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero p {
+            opacity: 0.9;
+        }
+
+        .logo-glow {
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 40px rgba(0, 198, 255, 0.3);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .logo-glow:hover {
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.7), 0 0 60px rgba(0, 198, 255, 0.5);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.14);
+            backdrop-filter: blur(14px);
+            border-radius: 22px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .glass-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-main {
+            background: linear-gradient(45deg, #ffffff, #f0f0f0);
+            color: #0047ff;
+            font-weight: 600;
+            border-radius: 50px;
+            padding: 12px 22px;
+            border: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-main:hover {
+            background: linear-gradient(45deg, #e0e0e0, #ffffff);
+            color: #0035cc;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        iframe, video {
+            border-radius: 16px;
+        }
+
+        .section-title {
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        footer {
+            opacity: 0.75;
+            font-size: 0.85rem;
+        }
+
+        .card-animation {
+            animation: slideIn 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        .card-animation:nth-child(1) { animation-delay: 0.2s; }
+        .card-animation:nth-child(2) { animation-delay: 0.4s; }
+        .card-animation:nth-child(3) { animation-delay: 0.6s; }
+        .card-animation:nth-child(4) { animation-delay: 0.8s; }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- HERO -->
+    <div class="hero text-center">
+        <img src="assets/logo.jpg" alt="Q.InvestKepri Logo" class="mb-3 logo-glow" style="border-radius: 50%; width: 200px; height: 200px; object-fit: cover;">
+        <h1>Q.InvestKepri</h1>
+        <p class="mt-2 mb-4">
+            Your gateway to investment opportunities in the Riau Islands Province
+        </p>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-9">
+
+            <!-- YouTube -->
+            <div class="card glass-card p-4 mb-4">
+                <div class="section-title">
+                    <i class="bi bi-youtube me-1"></i>
+                    Explore Investment Projects
+                </div>
+
+                <div class="ratio ratio-16x9 mb-3">
+                    <iframe 
+                        src="https://www.youtube.com/embed/1DhM6kqtOPg"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <a href="https://www.youtube.com/@QInvestKepri"
+                   target="_blank"
+                   class="btn btn-main w-100">
+                    Visit YouTube Channel
+                </a>
+            </div>
+
+            <!-- PDF -->
+            <div class="card glass-card p-4 mb-4 card-animation">
+                <div class="section-title">
+                    <i class="bi bi-file-earmark-pdf me-1"></i>
+                    Bilingual Investment Brochure
+                </div>
+
+                <iframe 
+                    src="assets/Brocure_JPN-ENG.pdf"
+                    height="380"
+                    class="w-100 mb-3">
+                </iframe>
+
+                <a href="assets/Brocure_JPN-ENG.pdf"
+                   download
+                   class="btn btn-main w-100">
+                    Download PDF
+                </a>
+            </div>
+
+            <!-- PDF -->
+            <div class="card glass-card p-4 mb-4 card-animation">
+                <div class="section-title">
+                    <i class="bi bi-file-earmark-pdf me-1"></i>
+                    Perkembangan Data Investasi Provinsi Kepulauan Riau Tahun 2024
+                </div>
+
+                <iframe 
+                    src="assets/BUKU_REALISASI_2024-halaman.pdf"
+                    height="380"
+                    class="w-100 mb-3">
+                </iframe>
+
+                <a href="assets/BUKU_REALISASI_2024-halaman.pdf"
+                   download
+                   class="btn btn-main w-100">
+                    Download PDF
+                </a>
+            </div>
+
+            <!-- Google Drive -->
+            <div class="card glass-card p-4 mb-5 card-animation">
+                <div class="section-title">
+                    <i class="bi bi-cloud-arrow-down me-1"></i>
+                    Investment Guide
+                </div>
+
+                <p class="mb-3" style="color: #ffffff;">
+                    Full investment documentation available on Google Drive
+                </p>
+
+                <a href="https://drive.google.com/drive/folders/1g12teP84hQD6LIksZXRaPZUIIA-JIBJN"
+                   target="_blank"
+                   class="btn btn-main w-100">
+                    Access Google Drive
+                </a>
+            </div>
+
+            <footer class="text-center mb-4">
+                © 2026 Q.InvestKepri
+            </footer>
+
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
